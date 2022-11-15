@@ -1,8 +1,11 @@
 
 
 function clicked(id) {
-    let amount = prompt("How Long Would You Like To Set Your Timer")
-
+    /**
+     * Function that runs when button is clicked that gets total amount of time user wants to wait for, calls startTimer to start countdown
+     * :param id: The ID of the button that is clickdd
+     */
+    let amount = prompt("How Long Would You Like To Set Your Timer") 
     amount = parseFloat(amount) * 60
     let display = document.querySelector('#time')
     for (let i = 0; i < 1; i ++) {
@@ -12,6 +15,11 @@ function clicked(id) {
 }
 
 function startTimer(duration, display) {
+    /**
+     * Function that starts a count down timer based on users duration
+     * :param duration: amount of mintutes user wants to set timer for
+     * :param display: Query where we want to place text
+     */
     var start = Date.now(),
         diff,
         minutes,
@@ -50,6 +58,7 @@ function startTimer(duration, display) {
     setInterval(timer, 1000);
 }
 
+// TODO: Write function that sends email to user specified email when timer reads zero
 function sendEmail(email) {
 
 }
