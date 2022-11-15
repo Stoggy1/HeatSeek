@@ -62,3 +62,10 @@ function startTimer(duration, display) {
 function sendEmail(email) {
 
 }
+
+// This is where im going to edit the color of image based on timer percentage
+const xCoord = 1;
+const yCoord = 1;
+const canvasWidth  = document.getElementById('fireicon').offsetWidth;
+
+console.log(canvasWidth)
